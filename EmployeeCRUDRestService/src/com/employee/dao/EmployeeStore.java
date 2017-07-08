@@ -40,12 +40,13 @@ public class EmployeeStore {
 		return map.get(id);
 	}
 
-	public void addNewEmployee(EmployeeDto employeeDto) {
+	public int addNewEmployee(EmployeeDto employeeDto) {
 
 		int lastId = map.lastKey();
 		employeeDto.setId(lastId + 1);
 
 		map.put(employeeDto.getId(), employeeDto);
+		return employeeDto.getId();
 	}
 
 	public boolean updateEmployee(int id, EmployeeDto employeeDto) {
