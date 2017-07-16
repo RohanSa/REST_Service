@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Deatils with Resume Upload</title>
+</head>
+<body>
+
+	<form method="post" action="rest/employees"
+		enctype="multipart/form-data">
+		<table border="1">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="text" name="dateofbirth"></td>
+			</tr>
+			<tr>
+				<td>Resume</td>
+				<td><input type="file" name="resume"></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="submit" value="Submit Details"></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>
